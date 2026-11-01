@@ -6,7 +6,7 @@ A release starts as a release candidate. Players get the exact files of the cand
 
 ### Cutting a candidate
 
-1. The version bump goes to `main` first: `static let appVersion` in `frontend/Sources/NSPortBuilder/ContentView.swift`, and the changelog.
+1. The version bump goes to `main` first: `static let appVersion` in `frontend/Sources/NX2Apple/ContentView.swift`, and the changelog.
 2. Tag a commit on `main` as `vX.Y.Z-rcN`, with N from 1: `git tag v0.7.6-rc1 <commit> && git push origin v0.7.6-rc1`.
 
 `build-mac-app.yml` checks that the tag without `-rcN` is `appVersion`. The app inside says `0.7.6`, not `0.7.6-rc1`. The final release ships this bundle, and the app's own update installs only a bundle whose version is the release's.
