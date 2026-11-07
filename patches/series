@@ -56,3 +56,4 @@
 0087-build-ipa-from-nsp-reuse-the-other-platform-s-ro.patch
 0088-nvn-decode-bc-uploads-before-copying-into-unpack.patch
 0089-shader-split-encrypted-legacy-ue-pak.patch
+0090-nvn-decode-cpu-bc-buffer-to-texture-copies-and-r.patch
